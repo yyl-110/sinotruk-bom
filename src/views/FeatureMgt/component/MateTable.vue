@@ -118,7 +118,6 @@ const btnList = [
   { icon: 'icon_operate_6', text: '更改', type: 4 },
   { icon: 'del', text: '删除', type: 5 },
 ]
-
 const btnDisabled = (btn, row) => {
   if (useUserRole.value === USER_ROLE.CONFIGURATOR) {
     return [2, 3, 4, 5].includes(btn.type)
@@ -130,7 +129,10 @@ const btnDisabled = (btn, row) => {
     return [5, 2, 3].includes(btn.type)
   }
   if (row.status === '设计中') {
-    return btn.type === 4
+    if (row.version.includes('A')) {
+      return btn.type === 4
+    }
+    return [3, 4].includes(btn.type)
   }
   return [2, 3, 4, 5].includes(btn.type)
 }

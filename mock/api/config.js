@@ -7,7 +7,7 @@ const list = [
     name: '特征1',
     description: '如果[(AEB==AEB的值)&&(FCW==FCW的值)]则 [ADCU==ADCU的值;]',
     version: 'A.1',
-    status: '已完成',
+    status: '设计中',
 
     changeUrl: 'http://xxx.xxx/xxx',
   },
@@ -17,8 +17,8 @@ const list = [
     specialAcModule: '否',
     name: '特征1',
     description: '如果[(AEB==AEB的值)&&(FCW==FCW的值)]则 [ADCU==ADCU的值;]',
-    version: 'A.1',
-    status: '已完成',
+    version: 'B.3424',
+    status: '设计中',
     changeUrl: 'http://xxx.xxx/xxx',
   },
   {
@@ -27,7 +27,7 @@ const list = [
     name: '特征1',
     description: '如果[(AEB==AEB的值)&&(FCW==FCW的值)]则 [ADCU==ADCU的值;]',
     version: 'A.1',
-    status: '已完成',
+    status: '设计中',
     changeUrl: 'http://xxx.xxx/xxx',
   },
   {

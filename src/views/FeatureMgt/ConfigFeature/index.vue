@@ -267,7 +267,10 @@ const btnDisabled = (btn, row) => {
     return [2, 3].includes(btn.type)
   }
   if (row.status === '设计中') {
-    return btn.type === 4
+    if (row.version.includes('A')) {
+      return btn.type === 4
+    }
+    return [3, 4].includes(btn.type)
   }
   return [2, 3, 4].includes(btn.type)
 }
