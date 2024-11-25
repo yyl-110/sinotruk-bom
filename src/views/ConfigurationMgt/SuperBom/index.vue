@@ -175,15 +175,15 @@ let columns = [
   //   width: 100,
   // },
   {
-    title: '设计成熟度',
-    key: 'maturity',
+    title: '成熟度',
+    key: 'maturityC',
     width: 100,
   },
-  {
-    title: '过程成熟度',
-    key: 'processMaturity',
-    width: 100,
-  },
+  // {
+  //   title: '过程成熟度',
+  //   key: 'processMaturity',
+  //   width: 100,
+  // },
   // {
   //   title: '项目组人员',
   //   key: 'owner',
