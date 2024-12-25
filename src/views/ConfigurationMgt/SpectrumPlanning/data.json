@@ -1,0 +1,179 @@
+{
+  "changeUrl": "http://pdmuat.cnhtc.cn/Windchill/netmarkets/jsp/ext/cnhtc/configmgmt/change/createPCR.jsp",
+  "version": "A.4",
+  "status": "设计中",
+  "processCreator": "张三",
+  "optionalItems": [
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:600826",
+      "optionNumber": "000001",
+      "optionName": "选装特征1",
+      "color": "白色",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:2600826",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值1",
+          "color": "黑色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:601234",
+      "optionNumber": "000002",
+      "optionName": "选装特征2",
+      "color": "白色",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:600827",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值2",
+          "color": "红色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:6300828",
+      "optionNumber": "000003",
+      "optionName": "选装特征3",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:600830",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值3",
+          "color": "蓝色"
+        }
+      ]
+    }
+  ],
+  "fixedItems": [
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:600826",
+      "optionNumber": "000001",
+      "optionName": "固化特征1",
+      "color": "白色",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:6008226",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:601234",
+      "optionNumber": "000002",
+      "optionName": "固化特征2",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:60022826",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.3ptc.windchill.option.model.Choice:60022826",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.opti43on.model.Choice:600826",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值1232223",
+          "color": "黑色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.=======Optqion:600828",
+      "optionNumber": "000003",
+      "optionName": "固化特征3",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:60082126",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.opti43on.model.Choice:60082324246",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值123222399999999",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.opti43on.model.Choice:6082324246",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值12399999",
+          "color": "黑色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:6008228",
+      "optionNumber": "000003",
+      "optionName": "固化特征3",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:6008261",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Ch3oice:6008261",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.opti43on.model.Choice:600826",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值1232223",
+          "color": "黑色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:60308228",
+      "optionNumber": "000003",
+      "optionName": "固化特征3",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:6008262",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.opti43on.model.Choice:600826",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值1232223",
+          "color": "黑色"
+        }
+      ]
+    },
+    {
+      "optionOid": "VR: com.ptc.windchill.option.model.Option:603038228",
+      "optionNumber": "000003",
+      "optionName": "固化特征3",
+      "color": "白色",
+      "choices": [
+        {
+          "choiceOid": "VR: com.ptc.windchill.option.model.Choice:600826",
+          "choiceNumber": "000101",
+          "choiceName": "选装特征值12323",
+          "color": "黑色"
+        },
+        {
+          "choiceOid": "VR: com.ptc.windchill.opti43on.model.Choice:600826",
+          "choiceNumber": "000103",
+          "choiceName": "选装特征值1232223",
+          "color": "黑色"
+        }
+      ]
+    }
+  ]
+}
