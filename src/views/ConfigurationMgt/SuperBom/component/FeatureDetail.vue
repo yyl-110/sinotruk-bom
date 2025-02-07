@@ -1,7 +1,7 @@
 <template>
   <n-modal v-model:show="showModal" :mask-closable="false">
-    <div h-95vh w-90vw rounded-4 bg-white>
-      <header h-40 flex items-center flex-justify-between px-20>
+    <div h-95vh w-90vw flex flex-col overflow-hidden rounded-4 bg-white>
+      <header h-40 flex flex-shrink-0 items-center flex-justify-between px-20>
         <div flex items-center>
           <div class="line" mr-8></div>
           <span text-14 font-bold text-hex-1d2129>
@@ -15,8 +15,8 @@
           @click="cancel"
         />
       </header>
-      <n-spin :show="loading">
-        <main h-auto min-h-500 px-20 pt-20>
+      <n-spin :show="loading" h-0 flex-1>
+        <main h-full min-h-500 overflow-y-auto px-20 pb-15 pt-20>
           <div
             class="feature-item position-relative min-h-20 w-full"
             :class="[extendList[0] && 'isBorder']"
@@ -31,11 +31,25 @@
               </div>
               定位特征
             </div>
-            <div v-show="extendList[0]" class="content min-h-200 flex flex pb-24 pl-26 pt-20">
+            <div
+              v-show="extendList[0]"
+              class="content min-h-200 flex flex pb-24 pl-26 pt-20"
+              max-h-375
+              overflow-y-auto
+            >
               <n-space>
                 <div v-for="(item, index) in positionItemsArr" :key="index" class="card">
-                  <div class="cardTitle flex items-center" h-34 bg-hex-e5f3ff pl-20 text-hex-1d2129>
-                    {{ item.name }}
+                  <div
+                    class="cardTitle flex items-center"
+                    h-34
+                    justify-center
+                    bg-hex-e5f3ff
+                    px-15
+                    text-hex-1d2129
+                  >
+                    <n-ellipsis style="max-width: 150px">
+                      {{ item.name }}
+                    </n-ellipsis>
                   </div>
                   <div class="cardContent px-20 py-10">
                     <n-space>
@@ -43,6 +57,7 @@
                         v-for="(val, inx) in item.value.split(',')"
                         :key="inx"
                         class="item px-14 py-6 text-14 text-hex-4E5969"
+                        min-h-37
                       >
                         {{ val }}
                       </div>
@@ -66,11 +81,25 @@
               </div>
               附带特征
             </div>
-            <div v-show="extendList[1]" class="content min-h-200 flex flex pl-26 pt-20">
+            <div
+              v-show="extendList[1]"
+              class="content min-h-200 flex flex pl-26 pt-20"
+              max-h-250
+              overflow-y-auto
+            >
               <n-space>
                 <div v-for="(item, index) in incidentialItems" :key="index" class="card">
-                  <div class="cardTitle flex items-center" h-34 bg-hex-e5f3ff pl-20 text-hex-1d2129>
-                    {{ item.name }}
+                  <div
+                    class="cardTitle flex items-center"
+                    h-34
+                    justify-center
+                    bg-hex-e5f3ff
+                    px-15
+                    text-hex-1d2129
+                  >
+                    <n-ellipsis style="max-width: 150px">
+                      {{ item.name }}
+                    </n-ellipsis>
                   </div>
                   <div class="cardContent px-20 py-10">
                     <n-space>
@@ -78,6 +107,7 @@
                         v-for="(val, inx) in item.value.split(',')"
                         :key="inx"
                         class="item px-14 py-6 text-14 text-hex-4E5969"
+                        min-h-37
                       >
                         {{ val }}
                       </div>
@@ -214,5 +244,8 @@ header {
 .cardContent {
   border-radius: 0px 0px 4px 4px;
   border: 1px solid #e5e6eb;
+}
+::v-deep .n-spin-content {
+  height: 100%;
 }
 </style>
